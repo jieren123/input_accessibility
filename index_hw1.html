@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Phone Dialer</title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="phone.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone.js"></script>
+</head>
+<body>
+  <div class="tabs" style="width: 300px; margin: 0 auto;">
+    <div id="tab1" class="tab" style="width: 33.33%;">Dialer</div>
+    <div id="tab2" class="tab" style="width: 33.33%;">Contact List</div>
+    <div id="tab3" class="tab" style="width: 33.33%;">Add Contact</div>
+  </div>
+
+
+  <div class="dialer">
+    <label for="phone-number">Dialer</label>
+    <input id="phone-number" type="text" placeholder="Enter a phone number" readonly>
+    <div class="row">
+      <div class="key" data-key="1">1</div>
+      <div class="key" data-key="2">2</div>
+      <div class="key" data-key="3">3</div>
+    </div>
+    <div class="row">
+      <div class="key" data-key="4">4</div>
+      <div class="key" data-key="5">5</div>
+      <div class="key" data-key="6">6</div>
+    </div>
+    <div class="row">
+      <div class="key" data-key="7">7</div>
+      <div class="key" data-key="8">8</div>
+      <div class="key" data-key="9">9</div>
+    </div>
+    <div class="row">
+      <div class="key" data-key="*">*</div>
+      <div class="key" data-key="0">0</div>
+      <div class="key" data-key="#">#</div>
+    </div>
+    <div class="row">
+      <div class="key" id="clear">Clear</div>
+      <div class="key" id="dial">Dial</div>
+    </div>
+  </div>
+
+  <div class="contact-list">
+    <label for="contact">Contact</label>
+    <div class="search-box">
+      <input id="contact-search" type="text" placeholder="Search contacts">
+    </div>
+    <div class="contact">
+      <h3>Contact 1</h3>
+      <p>Phone: 123-456-7890</p>
+      <p>Email: contact1@example.com</p>
+    </div>
+    <div class="contact">
+      <h3>Contact 2</h3>
+      <p>Phone: 987-654-3210</p>
+      <p>Email: contact2@example.com</p>
+    </div>
+  </div>
+
+  
+  <div class="add-contact">
+    <label for="contact-name">Add Contact</label><br>
+    <label for="contact-name">Name:</label>
+    <input id="contact-name" type="text" placeholder="Name">
+    <label for="contact-email">Email:</label>
+    <input id="contact-email" type="text" placeholder="Email">
+    <label for="contact-phone">Phone:</label>
+    <input id="contact-phone" type="text" placeholder="Phone">
+    <button id="add-contact-btn" class="button button-primary">Add</button>
+    <button id="clear-contact-btn" class="button button-secondary">Clear</button>
+  </div>
+</body>
+</html>
