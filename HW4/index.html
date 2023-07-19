@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facial Recognition: An Introduction</title>
+    <link rel="stylesheet" type="text/css" href="web.css">
+</head>
+<body>
+    <nav role="navigation" aria-label="Main Menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Tech Articles</a></li>
+            <li><a href="#">About This Blog</a></li>
+        </ul>
+    </nav>
+    <main role="main" aria-label="Main Content">
+        <h1>Facial Recognition: An Introduction</h1>
+        <h2>What is Facial Recognition?</h2>
+        <p>A facial recognition system is a technology potentially capable of matching a human face from a digital image or a video frame against a database of faces(Source: Wikipedia). However, facial recognition also raises concerns related to privacy, data security, and potential misuse. Therefore, its development and deployment are subject to legal and ethical considerations to protect individual rights and ensure responsible use.</p>
+        <h2>How Does Facial Recognition Work?</h2>
+        <p>Facial recognition technology works by employing a combination of computer vision, pattern recognition, and machine learning algorithms. The process generally involves the following steps:</p>
+        <ol>
+            <li>Face detection: The system uses algorithms to detect and locate human faces in an image or video frame.</li>
+            <li>Face alignment: Once a face is detected, the system may perform alignment to normalize the facial image.</li>
+            <li>Feature extraction: The system extracts facial features from the aligned face image.</li>
+            <li>Face representation: The extracted features are transformed into a mathematical representation.</li>
+            <li>Database comparison: The face template derived from the captured image is compared to a database of known face templates.</li>
+            <li>Matching and recognition: The system compares the face template against the templates in the database to find potential matches.</li>
+            <li>Decision and output: Based on the matching results, the system makes a decision.</li>
+        </ol>
+        <img src="facial-recognition.jpg" alt="Facial recognition system in action" />
+        <p>Image source: <a href="https://source-of-image.com">source-of-image.com</a></p>
+        <h2>Applications of Facial Recognition</h2>
+        <p>Facial recognition has many practical applications...</p>
+        <table>
+            <tr>
+                <th>Application</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>Security Systems</td>
+                <td>Facial recognition is extensively used in security systems to enhance surveillance and access control. It can be employed in airports, government buildings, banks, and public spaces to identify individuals on watchlists, track potential threats, and prevent unauthorized access.</td>
+            </tr>
+            <tr>
+                <td>User Authentication</td>
+                <td>Many devices and applications utilize facial recognition as a biometric authentication method. It enables users to unlock smartphones, tablets, and laptops, access banking apps, make secure payments, and authenticate for online services by simply scanning their faces.</td>
+            </tr>
+            <tr>
+                <td>Contactless Payments</td>
+                <td>Facial recognition can enable contactless payments by linking a user's facial biometrics to their payment information. By simply looking at a camera or a point-of-sale device, customers can authenticate their identity and authorize transactions without the need for physical cards or PINs.</td>
+            </tr>
+        </table>
+        <div id="comment-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            <button onclick="showAlert()">Post Comment</button>
+        </div>
+    </main>
+    <div id="alert" role="alert" class="hidden">Your comment has been posted!</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function showAlert() {
+            $('#alert').show();
+        }
+    </script>
+</body>
+</html>
