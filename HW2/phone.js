@@ -59,7 +59,6 @@ $(document).ready(function() {
       });
       
       $('#dial').click(function() {
-        // Implement your dialing logic here
         alert("Dialing: " + number);
       });
       
